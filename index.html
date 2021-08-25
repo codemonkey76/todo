@@ -29,7 +29,7 @@
 								<label x-text="todo.body"></label>
 								<button @click="deleteTodo(index)" class="destroy"></button>
 							</div>
-							<input @blur="completeTodo(index)" @keyup.enter="completeEdit(index)" @keyup.escape="cancelEdit(index)" class="edit" x-model="todo.newText">
+							<input @blur="completeEdit(index)" @keyup.enter="completeEdit(index)" @keyup.escape="cancelEdit(index)" class="edit" x-model="todo.newText">
 						</li>
 					</template>				
 				</ul>
