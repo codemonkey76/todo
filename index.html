@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Template • TodoMVC</title>
+		<title>Todo App - Alpine JS</title>
 		<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
 		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
 		<script defer src="https://unpkg.com/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
@@ -29,7 +29,7 @@
 								<label x-text="todo.body"></label>
 								<button @click="deleteTodo(index)" class="destroy"></button>
 							</div>
-							<input @blur="completeTodo(index)" @keyup.enter="completeEdit(index)" @keyup.esc="cancelEdit(index)" class="edit" x-model="todo.newText">
+							<input @blur="completeTodo(index)" @keyup.enter="completeEdit(index)" @keyup.escape="cancelEdit(index)" class="edit" x-model="todo.newText">
 						</li>
 					</template>				
 				</ul>
